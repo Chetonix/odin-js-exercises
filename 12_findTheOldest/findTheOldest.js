@@ -2,13 +2,13 @@ const findTheOldest = function(people) {
     minYears = 0;
     targetPerson = null;
     for (let person of people) {
-        let yearsLived = person.yearOfDeath - person.yearOfBirth
+        let yearsLived = person.yearOfDeath - person.yearOfBirth;
         if (yearsLived > minYears) {
             minYears = yearsLived;
             targetPerson = person;
         }
     }
-    return person;
+    return targetPerson;
 };
 
 // Do not edit below this line
